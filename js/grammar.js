@@ -47,4 +47,12 @@ export default class Grammar {
             }
         }
     }
+
+    /**
+     * @returns a boolean value which asserts whether the gvien word is valid for the grammar or not
+     * @param {String} word 
+     */
+    isWordValid(word) {
+        return this.getWords(word.length).includes(word);
+    }
 }
